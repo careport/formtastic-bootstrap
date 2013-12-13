@@ -7,7 +7,7 @@ module FormtasticBootstrap
       def to_html
         checkbox_wrapping do
           hidden_field_html <<
-          [label_with_nested_checkbox, hint_html].join("\n").html_safe
+          [label_with_nested_checkbox, hint_html, error_html].join("\n").html_safe
         end
       end
 
